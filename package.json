@@ -2,7 +2,7 @@
   "scripts": {
     "format": "prettier --list-different --single-quote --print-width=120 webpack.config.js \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
-    "build": "webpack js/ClientApp.js public/bundle.js"
+    "build": "webpack"
   },
   "dependencies": {
     "axios": "0.16.1",
