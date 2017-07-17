@@ -1,14 +1,15 @@
 import React from 'react';
-import { render } from 'react-dom';
+import {render} from 'react-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Landing from './Landing';
+import Search from './Search';
 
-const App = () => (
+const App = () =>
+  <BrowserRouter>
     <div className="app">
-      <div className="landing">
-        <h1>BestFlix</h1>
-        <input type="text" placeholder="Search" />
-        <a>or Browse All</a>
-      </div>
+      <Route exact path="/" component={Landing} />
+      <Route path="/search" component={Search} />
     </div>
-);
+  </BrowserRouter>;
 
-render(<App/ >, document.getElementById("app"));
+render(<App />, document.getElementById('app'));
