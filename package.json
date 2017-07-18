@@ -1,10 +1,13 @@
 {
   "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
     "format": "prettier --list-different --single-quote --print-width=120 webpack.config.js \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "dev": "webpack-dev-server"
+    "test": "NODE_ENV=test jest",
+    "test:update": "NODE_ENV=test jest -u",
+    "test:coverage": "NODE_ENV=test jest --coverage",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "axios": "0.16.1",
@@ -61,6 +64,9 @@
     "react-hot-loader": "3.0.0-beta.6",
     "react-test-renderer": "15.5.4",
     "webpack-dev-server": "2.4.5"
+  },
+  "jest": {
+    "snapshotSerializers": ["jest-serializer-enzyme"]
   },
   "name": "complete-intro-to-react",
   "version": "3.0.0",
