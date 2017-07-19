@@ -17,6 +17,7 @@
     "compression": "1.6.2",
     "cors": "2.8.3",
     "express": "4.15.3",
+    "flow-typed": "^2.1.5",
     "lodash": "4.17.4",
     "preact": "8.1.0",
     "preact-compat": "3.16.0",
@@ -66,7 +67,9 @@
     "webpack-dev-server": "2.4.5"
   },
   "jest": {
-    "snapshotSerializers": ["jest-serializer-enzyme"]
+    "snapshotSerializers": [
+      "jest-serializer-enzyme"
+    ]
   },
   "name": "complete-intro-to-react",
   "version": "3.0.0",

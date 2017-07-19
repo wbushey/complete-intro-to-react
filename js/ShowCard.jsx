@@ -1,4 +1,4 @@
-import {string} from 'prop-types';
+// @flow
 import React from 'react';
 import styled from 'styled-components';
 
@@ -17,7 +17,12 @@ const Image = styled.img`
   margin-right: 10px;
 `;
 
-const ShowCard = props =>
+const ShowCard = (props: {
+  poster: string,
+  title: string,
+  year: string,
+  description: string,
+}) => (
   <Wrapper>
     <Image
       alt={`${props.title} show Poster`}
@@ -32,13 +37,7 @@ const ShowCard = props =>
     <p>
       {props.description}
     </p>
-  </Wrapper>;
-
-ShowCard.propTypes = {
-  poster: string.isRequired,
-  title: string.isRequired,
-  year: string.isRequired,
-  description: string.isRequired,
-};
+  </Wrapper>
+);
 
 export default ShowCard;
