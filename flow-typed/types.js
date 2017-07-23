@@ -11,6 +11,7 @@ export type Show = {
   description: string,
   year: string,
   imdbID: string,
+  imdbRating: string,
   poster: string,
   trailer: string,
 };
