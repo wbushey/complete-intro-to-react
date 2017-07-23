@@ -1,21 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShowCard renders correctly 1`] = `
-<styled.div>
-  <styled.img
-    alt="Foobar show Poster"
-    src="/public/img/posters/foobar"
-  />
-  <h3>
-    Foobar
-  </h3>
-  <h4>
-    (
-    1990
-    )
-  </h4>
-  <p>
-    A bar of foo
-  </p>
-</styled.div>
+<Link
+  replace={false}
+  to="/details/undefined"
+>
+  <styled.div>
+    <styled.img
+      alt="Foobar show Poster"
+      src="/public/img/posters/foobar"
+    />
+    <h3>
+      Foobar
+    </h3>
+    <h4>
+      (
+      1990
+      )
+    </h4>
+    <p>
+      A bar of foo
+    </p>
+  </styled.div>
+</Link>
 `;
