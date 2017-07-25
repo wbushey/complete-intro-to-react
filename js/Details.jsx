@@ -7,7 +7,7 @@ import Spinner from './Spinner';
 
 class Details extends Component {
   state = {
-    apiData: {imdbRating: ''},
+    apiData: {rating: ''},
   };
   componentDidMount() {
     axios
