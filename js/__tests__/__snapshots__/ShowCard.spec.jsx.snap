@@ -5,7 +5,10 @@ exports[`ShowCard renders correctly 1`] = `
   replace={false}
   to="/details/undefined"
 >
-  <styled.div>
+  <styled.div
+    className="show-card"
+    to="/details/undefined"
+  >
     <styled.img
       alt="Foobar show Poster"
       src="/public/img/posters/foobar"
