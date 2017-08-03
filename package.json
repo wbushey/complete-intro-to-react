@@ -2,7 +2,7 @@
   "scripts": {
     "api": "node ratingsAPI.js",
     "build": "webpack",
-    "dev": "webpack-dev-server",
+    "dev": "NODE_ENV=server nodemon server.js",
     "format": "prettier --list-different --single-quote --print-width=120 webpack.config.js \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
     "test": "NODE_ENV=test jest",
